@@ -18,28 +18,6 @@ export default {
         pageTitle:'users page'
     }
   },
-/*  async asyncData({store,error}){
-    try{
-      await store.dispatch("users/fetchUsers")
-     return {}
-    }catch(e){
-      error(e)
-    }
-
-  },
-  */
- /*
- async fetch({store,error}){
-
-    try{
-      if(store.getters['users/users'].length===0){
-        await store.dispatch("users/fetchUsers")
-      }
-    }catch(e){
-      error(e)
-    }
- },
- */
   computed:{
     users(){
       return this.$store.getters.['users/users']
